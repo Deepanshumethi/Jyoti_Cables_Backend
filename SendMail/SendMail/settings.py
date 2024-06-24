@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-))wcl$z7=w(77&f^88^8xg@7*r)y$r!2$^ao-h!1k!d9suphbk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 
 
 # Application definition
@@ -144,6 +144,5 @@ EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')  # Your Zoho email address
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')  # Your Zoho password or app password
 EMAIL_USE_TLS = True
 
-import os
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')

@@ -23,7 +23,9 @@
     {
       "src": "/(.*)",
       "dest": "SendMail/wsgi.py"
-    }
+    },
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "manage.py" }
   ]
 }
 
